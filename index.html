@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Action Pledge - Join the Movement</title>
+  <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>🌍 Join the Climate Action Movement</h1>
+      <p>Every pledge counts. Every action matters. Together, we can create a sustainable future for our planet.</p>
+      <button class="cta-button" onclick="scrollToForm()">Take the Pledge Now</button>
+    </div>
+  </section>
+
+  <!-- Live KPIs -->
+  <section class="kpi-section">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Our Growing Community</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Target Pledges</div>
+          <div class="kpi-number">1,000,000</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Pledges Made</div>
+          <div class="kpi-number" id="total-pledges">0</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Students</div>
+          <div class="kpi-number" id="student-count">0</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Professionals</div>
+          <div class="kpi-number" id="professional-count">0</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Take Action -->
+  <section class="why-section">
+    <div class="container">
+      <h2 class="section-title">Why Your Pledge Matters</h2>
+      <p class="section-subtitle">Individual actions create collective impact. When we come together, small changes lead to massive transformation.</p>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-icon">🌱</div>
+          <h3>Individual Responsibility</h3>
+          <p>Every person has the power to make a difference. Your daily choices shape the future of our planet.</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">🤝</div>
+          <h3>Global Movement</h3>
+          <p>Join millions worldwide committed to climate action. Together, we amplify our impact exponentially.</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">🌍</div>
+          <h3>Lasting Change</h3>
+          <p>Your commitment today creates a ripple effect, inspiring others and building a sustainable tomorrow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pledge Form -->
+  <section class="form-section" id="pledge-form-section">
+    <div class="container">
+      <h2 class="section-title">Make Your Pledge</h2>
+      <p class="section-subtitle">Commit to climate-positive habits and inspire others to join the movement.</p>
+      <div class="form-container">
+        <form id="pledge-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile Number *</label>
+            <input type="tel" id="mobile" name="mobile" required placeholder="+91 9876543210" />
+          </div>
+
+          <div class="form-group">
+            <label for="state">State</label>
+            <select id="state" name="state" required>
+              <option value="">Select your state</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Delhi">Delhi</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Profile Type *</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="profile" value="Student" required />
+                <span>🎓 Student</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="profile" value="Working Professional" required />
+                <span>💼 Working Professional</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="profile" value="Other" required />
+                <span>👤 Other</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Select Your Commitments * (Choose at least one)</label>
+            <div class="commitment-theme">
+              <div class="theme-title">⚡ Energy Commitments</div>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Solar Power" /> <span>Switch to Solar Power</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="LED Bulbs" /> <span>Use LED Bulbs</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Unplug Devices" /> <span>Unplug Unused Devices</span></label>
+              </div>
+            </div>
+
+            <div class="commitment-theme">
+              <div class="theme-title">🚗 Transport Commitments</div>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Public Transport" /> <span>Use Public Transport</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Cycling" /> <span>Cycle for Short Distances</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Carpooling" /> <span>Practice Carpooling</span></label>
+              </div>
+            </div>
+
+            <div class="commitment-theme">
+              <div class="theme-title">♻️ Waste Commitments</div>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Reduce Plastic" /> <span>Reduce Plastic Usage</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Composting" /> <span>Practice Composting</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="commitment" value="Recycling" /> <span>Recycle Regularly</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="privacy-note">
+            <strong>🔒 Privacy Note:</strong> Your mobile number and email are required for validation but will never be shown publicly. Your data is used only for verification and engagement purposes.
+          </div>
+
+          <button type="submit" class="submit-button">🌟 Submit My Pledge</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Section -->
+  <section class="certificate-section" id="certificate-section">
+    <div class="container">
+      <h2 class="section-title">Your Climate Champion Certificate</h2>
+
+      <div class="certificate" id="certificate">
+        <h2 class="certificate-title">🌍 Climate Action Champion</h2>
+      <div class="certificate-name" id="cert-name">Your Name</div>
+        <p class="certificate-message">Cool Enough to Care!</p>
+        <p style="font-size: 1.2rem; color: var(--gray); position: relative;">
+        has pledged to take climate action and inspire positive change
+        </p>
+      <div class="certificate-stars" id="cert-stars">⭐⭐⭐⭐⭐</div>
+        <p style="font-weight: 600; color: var(--primary); position: relative;" id="cert-commitments">
+          9 Climate Commitments
+        </p>
+      <div class="certificate-date" id="cert-date">Date: January 1, 2025</div>
+    </div>
+
+    <!-- Added: Download button -->
+    <div style="text-align: center; margin-top: 20px;">
+      <button class="cta-button" onclick="downloadCertificate()">📜 Download Certificate</button>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <button class="cta-button" onclick="scrollToPledgeWall()">View Pledge Wall</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Pledge Wall -->
+  <section class="wall-section" id="wall-section">
+    <div class="container">
+      <h2 class="section-title">🌟 Pledge Wall of Champions</h2>
+      <p class="section-subtitle">Celebrate our community of climate heroes making a real difference!</p>
+      <div class="pledge-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Pledge ID</th>
+              <th>Name</th>
+              <th>Date</th>
+              <th>State</th>
+              <th>Profile</th>
+              <th>💚 Love for Planet</th>
+            </tr>
+          </thead>
+          <tbody id="pledge-wall-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Climate Action Pledge. Together for a Sustainable Future. 🌍💚</p>
+      <p style="margin-top: 10px; opacity: 0.8;">Your privacy matters. Email and mobile numbers are never displayed publicly.</p>
+    </div>
+  </footer>
+
+  <button class="reset-button" onclick="resetAllPledges()">🔄 Reset Data</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
