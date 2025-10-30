@@ -7,8 +7,8 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
 ---
 
 ###  Live Demo & Source  
-- **Live Demo:** https://sowndharyarajarajan.github.io/Climate-Action-Pledge-Microsite/_  
-- **GitHub Repository:** _[To be added after pushing to GitHub]_  
+- **Live Demo:** https://sowndharyarajarajan.github.io/Climate-Action-Pledge-Microsite/
+- **GitHub Repository:** https://github.com/SowndharyaRajarajan/Climate-Action-Pledge-Microsite/tree/main  
 
 ---
 
