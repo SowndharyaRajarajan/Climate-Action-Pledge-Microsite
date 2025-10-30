@@ -1,4 +1,4 @@
-## 🌍 Climate Action Pledge Microsite  
+##  Climate Action Pledge Microsite  
 
 A **responsive, single-page web application** that encourages individuals to take climate-positive pledges, receive instant certificates, and get featured on a public pledge wall.  
 
@@ -6,31 +6,31 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
 
 ---
 
-### ✨ Live Demo & Source  
+###  Live Demo & Source  
 - **Live Demo:** _[To be added after deployment]_  
 - **GitHub Repository:** _[To be added after pushing to GitHub]_  
 
 ---
 
-## 🚀 Features  
+##  Features  
 
-### 🏠 Hero Section  
+###  Hero Section  
 - Motivational banner and message  
 - Smooth “Take the Pledge” scroll animation  
 
-### 📊 Live KPIs  
+###  Live KPIs  
 - **Target Pledges:** 1,000,000 (static)  
 - **Dynamic Counters:** Total pledges, Students, Professionals (auto-updated from localStorage)  
 
-### 🌱 Why Take Climate Action  
+###  Why Take Climate Action  
 - Inspiring statements emphasizing **individual action**, **global movement**, and **lasting change**  
 
-### 📝 Pledge Form  
+###  Pledge Form  
 - Fields: **Name**, **Email**, **Mobile**, **State**, **Profile Type**  
-- 3 themes of commitment — Energy ⚡, Transport 🚗, Waste ♻️  
+- 3 themes of commitment — Energy , Transport , Waste   
 - Field validation and privacy note  
 
-### 🏅 Certificate Generator  
+###  Certificate Generator  
 - Personalized certificate generated instantly after form submission  
 - Includes:
   - User name  
@@ -38,18 +38,18 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
   - Date  
   - “Cool Enough to Care!” message  
 - Downloadable PDF using `html2canvas` + `jsPDF`  
-- Fun confetti animation 🎉  
+- Fun confetti animation   
 
-### 💚 Public Pledge Wall  
+###  Public Pledge Wall  
 - Displays live pledges (Pledge ID, Name, Date, State, Profile, Love for Planet ⭐)  
 - Email and mobile hidden for privacy  
 
-### 🔒 Privacy Note  
+###  Privacy Note  
 - Clearly displayed: “Email and mobile are required for validation but never shown publicly.”  
 
 ---
 
-## 🧠 Tech Stack  
+##  Tech Stack  
 
 | Category | Tools Used |
 |-----------|-------------|
@@ -60,9 +60,9 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
 
 ---
 
-## ⚙️ Setup & Deployment  
+##  Setup & Deployment  
 
-### 🧩 Local Setup  
+###  Local Setup  
 1. Clone the repository  
    ```bash
    git clone https://github.com/<your-username>/climate-pledge-microsite.git
@@ -70,7 +70,7 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
    ```
 2. Open `index.html` in a browser, or run a local server using **VS Code Live Server**  
 
-### 🌐 Deploy on GitHub Pages  
+###  Deploy on GitHub Pages  
 1. Go to **Settings → Pages**  
 2. Under *Branch*, select `main` → `/ (root)`  
 3. Click **Save**  
@@ -81,7 +81,7 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
 
 ---
 
-## ✅ Evaluation Criteria  
+##  Evaluation Criteria  
 
 | Criteria | Status |
 |-----------|:------:|
@@ -97,7 +97,7 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
 
 ---
 
-## 💡 Highlights  
+##  Highlights  
 - Responsive and visually clean design  
 - Dynamic interactivity using JavaScript  
 - Simulated backend with persistent localStorage  
@@ -106,5 +106,5 @@ Built as part of the **Web Developer Internship Task**, this project focuses on 
 
 ---
 
-## 📜 License  
+##  License  
 Open-source and created for internship evaluation and educational purposes.
